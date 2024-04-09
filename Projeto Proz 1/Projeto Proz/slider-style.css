@@ -1,0 +1,99 @@
+.slider {
+    width: 80%; /* Reduzindo o tamanho do slider */
+    max-width: 800px; /* Definindo um tamanho máximo */
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #8A2BE2;
+    border-radius: 20px;
+}
+
+.slider .list {
+    position: relative;
+    width: 300%; /* Definindo a largura do slider */
+    height: auto;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .item {
+    flex: 0 0 33.33%; /* Garantindo que cada item ocupe 1/3 do slider */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .list img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; /* Ajustando a largura da imagem para que seja proporcional ao slider */
+    height: auto; /* Ajustando a altura da imagem para que seja proporcional ao slider */
+    object-fit: contain;
+    border-radius: 18px;
+}
+
+
+.slider .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(138, 43, 226, 0.5);
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slider #prev {
+    left: 20px;
+}
+
+.slider #next {
+    right: 20px;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #8A2BE2;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: auto; /* Alteração aqui */
+    }
+
+    .slider .list {
+        width: 300%; /* Alteração aqui */
+        height: auto; /* Alteração aqui */
+    }
+}

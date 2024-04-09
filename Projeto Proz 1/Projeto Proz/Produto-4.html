@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de compra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400; 700&display=swap" rel="stylesheet">
+    <link href="Produtos.css" rel="stylesheet">
+    <link href="./Home.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar" >
+            <div class="header-inner-content">
+                <h1 class="logo"><a href="#inicio">LUID<span>STORE</span></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="PáginaSobre.html">Sobre</a></li>
+                        <li><a href="">Conta</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icon-container">
+                    <img src="./images/images/cart.png">
+                    <img src="./images/images/menu.png" class="menu-button" id="menu-button">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="#inicio">
+            <div class="container">
+                <div class="left-side">
+                    <div class="items">
+                        <div class="select-image">
+                            <img src="./img/imagem4.webp">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="content">
+                        <h1>Avell Storm BS</h1>
+                        <p>GeForce® RTX 3050 (4GB GDDR6)
+                            Intel® Core™ i7-12650H Alder Lake (24MB cache, 3.5GHz ~ 4.7GHz Turbo Boost Max 3.0)
+                            16GB [2x 8GB - Dual Channel] Memória DDR4 (3200 MHZ)
+                            SSD M.2 NVME 512GB - Geração 4 - [ 3.400 MB/s ]
+                            15.6" FHD WVA (1920x1080p) - 144Hz / Matte / Contraste: 1000:1 / Brilho 250 cd/m² </p>
+                        <div class="prices"><span class="price">R$ 4.999,00</span>
+                        </div>
+                        <div class="options">
+                            <div class="amount">
+                                <div class="minus">
+                                    <img src="./images2/images/icon-minus.png">
+                                </div>
+                                <span>0</span>
+                                <div class="plus">
+                                    <img src="./images2/images/icon-plus.png">
+                                </div>
+                            </div>
+                            <a href="" class="button"><img src="./images/images/cart.png">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.logo a').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = "Home.html";
+        });
+    </script>
+</body>
+</html>
